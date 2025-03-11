@@ -2,5 +2,9 @@
   "name": "@admin/ui",
   "version": "1.0.0",
   "private": true,
-  "main": "index.ts"
+  "main": "index.ts",
+  "dependencies": {
+    "antd": "^5.24.3",
+    "react": "^19.0.0"
+  }
 }
