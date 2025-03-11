@@ -1,5 +1,5 @@
-import { Button as AntdButton } from 'antd';
 import React, { ComponentProps } from 'react';
+import { Button as AntdButton } from 'antd';
 
 interface ButtonProps extends ComponentProps<typeof AntdButton> {}
 

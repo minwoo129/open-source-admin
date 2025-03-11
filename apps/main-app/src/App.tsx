@@ -1,7 +1,6 @@
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { Button } from '@admin/ui';
 
 function App() {
   return (
@@ -16,9 +15,9 @@ function App() {
       </div>
       <h1>Vite + React(Main)</h1>
       <div className="card">
-        <Button type="primary" color="green">
+        {/* <Button type="primary" color="green">
           Test
-        </Button>
+        </Button> */}
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
