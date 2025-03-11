@@ -1,0 +1,11 @@
+{
+    "name": "open-source-admin",
+    "private": true,
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ],
+    "scripts": {
+      "normal": "yarn workspace normal"
+    }
+  }
