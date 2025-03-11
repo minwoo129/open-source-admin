@@ -2,8 +2,10 @@ import { ComponentProps } from 'react';
 import { Table as AntdTable } from 'antd';
 import { ColumnProps } from 'antd/es/table';
 
-export interface TableProps<T extends {}>
-  extends Omit<ComponentProps<typeof AntdTable>, 'columns' | 'dataSource'> {
+export type TableObject = Record<string | number | symbol, any>;
+
+export interface TableProps<T extends TableObject>
+  extends Omit<ComponentProps<typeof AntdTable<T>>, 'columns' | 'dataSource'> {
   datas: T[];
   columns: ColumnStructure<T>;
   filters?: FilterStructure<T>;
@@ -15,14 +17,14 @@ export type ColumnItemType = ArrayElement<
   ComponentProps<typeof AntdTable>['columns']
 >;
 
-interface ColumnStructureItemType<T extends {}>
+interface ColumnStructureItemType<T extends TableObject>
   extends Omit<ColumnProps<T>, 'dataIndex'> {}
 
-type ColumnStructure<T extends {}> = {
+type ColumnStructure<T extends TableObject> = {
   [key in keyof T]?: ColumnStructureItemType<T>;
 };
 
-type FilterStructure<T extends {}> = {
+type FilterStructure<T extends TableObject> = {
   [key in keyof T]?: {
     filterMode: 'menu' | 'tree';
     onFilter: (value: boolean, record: T) => boolean;
@@ -30,12 +32,12 @@ type FilterStructure<T extends {}> = {
   };
 };
 
-export type UseTableArgs<T extends {}> = {
+export type UseTableArgs<T extends TableObject> = {
   datas: T[];
   columns: ColumnStructure<T>;
   filters?: FilterStructure<T>;
 };
 
-export type ColumnSetValueType<T extends {}> = {
+export type ColumnSetValueType<T extends TableObject> = {
   [key in keyof T]?: T[key][];
 };

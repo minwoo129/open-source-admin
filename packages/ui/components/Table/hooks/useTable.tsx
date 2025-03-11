@@ -1,8 +1,8 @@
 import { ColumnProps, ColumnsType } from 'antd/es/table';
-import { UseTableArgs } from '../types';
+import { TableObject, UseTableArgs } from '../types';
 import { useMemo } from 'react';
 
-const useTable = <T extends {}>({
+const useTable = <T extends TableObject>({
   columns,
   datas,
   filters,
