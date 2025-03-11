@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "main": "yarn workspace main-app"
+    "main": "yarn workspace main-app",
+    "packages:ui": "yarn workspace @admin/ui"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
