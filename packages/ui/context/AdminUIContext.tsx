@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
   BarElement,
+  RadialLinearScale,
 } from 'chart.js';
 
 ChartJS.register(
@@ -20,6 +21,7 @@ ChartJS.register(
   Tooltip,
   Legend,
   BarElement,
+  RadialLinearScale,
 );
 interface AdminUIContextProps {}
 
