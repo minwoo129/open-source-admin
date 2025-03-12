@@ -8,3 +8,4 @@ export {
 } from './context/AdminUIContext';
 
 export { default as Chart } from './components/Chart';
+export { default as SearchInput } from './components/SearchInput';
