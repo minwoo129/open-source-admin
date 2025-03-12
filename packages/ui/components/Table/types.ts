@@ -18,6 +18,8 @@ export interface TableProps<T extends TableObject>
    * 테이블 컬럼
    */
   columns: ColumnStructure<T>;
+  /** 헤더 컴포넌트 */
+  header?: React.ReactNode;
 }
 
 export interface TableRowEvents<T extends TableObject> {
