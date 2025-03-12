@@ -2,6 +2,7 @@ import React from 'react';
 import { Table as AntdTable } from 'antd';
 import useTable from './hooks/useTable';
 import { TableObject, TableProps } from './types';
+import '@ant-design/v5-patch-for-react-19';
 
 const Table = <T extends TableObject>({
   datas,
