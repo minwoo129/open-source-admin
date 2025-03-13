@@ -19,7 +19,7 @@ const useTable = <T extends TableObject>({
     }
 
     return newColumns;
-  }, [columns, datas]);
+  }, [columns]);
 
   return { convertedColumns };
 };
