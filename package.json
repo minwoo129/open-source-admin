@@ -11,10 +11,13 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
     "@vitejs/plugin-react": "^4.3.4",
     "prettier": "^3.5.3",
+    "react": "^19.0.0",
     "typescript": "^5.8.2",
-    "vite": "^6.2.1",
+    "vite": "^6.2.0",
     "vitest": "^3.0.8"
-  }
+  },
+  "packageManager": "yarn@4.7.0"
 }
