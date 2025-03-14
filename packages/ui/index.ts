@@ -9,5 +9,6 @@ export {
 
 export { default as Chart } from './src/components/Chart';
 export { default as SearchInput } from './src/components/SearchInput';
+export { default as Checkbox } from './src/components/Checkbox';
 
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
