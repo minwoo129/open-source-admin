@@ -15,6 +15,7 @@ export { default as Select } from './src/components/Select';
 export { default as Switch } from './src/components/Switch';
 export { default as Input } from './src/components/Input';
 export { default as DateTimePicker } from './src/components/DateTimePicker';
+export { default as PasswordInput } from './src/components/PasswordInput';
 // ======================================= hooks =======================================
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
 export { default as useAdminUIRadio } from './src/hooks/useAdminUIRadio';
