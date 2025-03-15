@@ -13,6 +13,7 @@ export { default as Checkbox } from './src/components/Checkbox';
 export { default as Radio } from './src/components/Radio';
 export { default as Select } from './src/components/Select';
 export { default as Switch } from './src/components/Switch';
+export { default as Input } from './src/components/Input';
 // ======================================= hooks =======================================
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
 export { default as useAdminUIRadio } from './src/hooks/useAdminUIRadio';
