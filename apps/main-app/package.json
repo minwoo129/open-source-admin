@@ -28,6 +28,7 @@
     "vite": "^6.2.0"
   },
   "peerDependencies": {
+    "@playwright/test": "^1.51.0",
     "@types/react": "^19.0.10",
     "dayjs": "^1.11.13"
   }
