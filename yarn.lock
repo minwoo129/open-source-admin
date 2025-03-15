@@ -22,6 +22,7 @@ __metadata:
     react-chartjs-2: "npm:^5.3.0"
   peerDependencies:
     "@types/react": ^19.0.10
+    dayjs: ^1.11.13
   languageName: unknown
   linkType: soft
 
@@ -1680,7 +1681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.11":
+"dayjs@npm:^1.11.11, dayjs@npm:^1.11.13":
   version: 1.11.13
   resolution: "dayjs@npm:1.11.13"
   checksum: 10c0/a3caf6ac8363c7dade9d1ee797848ddcf25c1ace68d9fe8678ecf8ba0675825430de5d793672ec87b24a69bf04a1544b176547b2539982275d5542a7955f35b7
@@ -2524,6 +2525,7 @@ __metadata:
     vite: "npm:^6.2.0"
   peerDependencies:
     "@types/react": ^19.0.10
+    dayjs: ^1.11.13
   languageName: unknown
   linkType: soft
 
@@ -2742,6 +2744,7 @@ __metadata:
     "@types/node": "npm:^22.13.10"
     "@types/react": "npm:^19.0.10"
     "@vitejs/plugin-react": "npm:^4.3.4"
+    dayjs: "npm:^1.11.13"
     prettier: "npm:^3.5.3"
     react: "npm:^19.0.0"
     typescript: "npm:^5.8.2"
