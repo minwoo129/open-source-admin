@@ -80,6 +80,12 @@ type ColumnStructure<T extends TableObject> = {
   [key in keyof T]?: ColumnStructureItemType<T>;
 };
 
+// ========================================================================================
+export type onRowFuncType<T extends TableObject> = NonNullable<
+  ComponentProps<typeof AntdTable<T>>['onRow']
+>;
+// ========================================================================================
+
 export type UseTableArgs<T extends TableObject> = {
   /**
    * 테이블 데이터
