@@ -1,6 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 import Radio from '../components/Radio';
-import { CheckboxOptionType } from 'antd';
+import { CheckboxOptionType, RadioChangeEvent } from 'antd';
 
 const RADIO_DEFAULT_SELECTED_VALUE = 1;
 
@@ -8,6 +8,8 @@ interface RadioComponentProps
   extends Omit<ComponentProps<typeof Radio>, 'value' | 'onChange' | 'options'> {
   options: CheckboxOptionType<number>[];
 }
+
+type handleChangeFuncType = (e: RadioChangeEvent) => void;
 
 type UseAdminUIRadioRetType = [
   number,
@@ -19,10 +21,14 @@ const useAdminUIRadio = (
 ): UseAdminUIRadioRetType => {
   const [value, setValue] = useState(defaultValue);
 
+  const handleChange: handleChangeFuncType = (e) => {
+    setValue(parseInt(e.target.value));
+  };
+
   const RadioComponent = ({ options, ...props }: RadioComponentProps) => {
     return (
       <Radio
-        onChange={(e) => setValue(parseInt(e.target.value))}
+        onChange={handleChange}
         value={value}
         options={options}
         {...props}
