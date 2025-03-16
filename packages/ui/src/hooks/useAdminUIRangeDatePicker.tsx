@@ -1,6 +1,7 @@
 import React, { ComponentProps, useState } from 'react';
 import DateTimePicker from '../components/DateTimePicker';
 import dayjs from 'dayjs';
+import type { Dayjs } from 'dayjs';
 
 interface DatePickerProps
   extends Omit<
@@ -13,11 +14,10 @@ interface RangeDateType<T> {
   end: T;
 }
 
-interface UseAdminUIRangeDatePickerArgs
-  extends Partial<RangeDateType<dayjs.Dayjs>> {}
+interface UseAdminUIRangeDatePickerArgs extends Partial<RangeDateType<Dayjs>> {}
 
 type UseAdminUIRangeDatePickerRetType = [
-  RangeDateType<dayjs.Dayjs>,
+  RangeDateType<Dayjs>,
   (args: DatePickerProps) => React.ReactNode,
 ];
 

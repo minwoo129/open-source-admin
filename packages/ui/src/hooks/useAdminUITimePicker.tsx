@@ -1,5 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 import dayjs from 'dayjs';
+import type { Dayjs } from 'dayjs';
 import DateTimePicker from '../components/DateTimePicker';
 
 interface TimePickerProps
@@ -9,12 +10,12 @@ interface TimePickerProps
   > {}
 
 type UseAdminUITimePickerRetType = [
-  dayjs.Dayjs,
+  Dayjs,
   (args: TimePickerProps) => React.ReactNode,
 ];
 
 const useAdminUITimePicker = (
-  defaultValue?: dayjs.Dayjs,
+  defaultValue?: Dayjs,
 ): UseAdminUITimePickerRetType => {
   const [value, setValue] = useState(defaultValue ?? dayjs());
 
