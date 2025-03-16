@@ -1,4 +1,4 @@
-import React, { ComponentProps, useState } from 'react';
+import React, { ComponentProps, useCallback, useState } from 'react';
 import dayjs from 'dayjs';
 import type { Dayjs } from 'dayjs';
 import DateTimePicker from '../components/DateTimePicker';
@@ -8,6 +8,11 @@ interface TimePickerProps
     ComponentProps<typeof DateTimePicker.Time>,
     'value' | 'onChange'
   > {}
+
+type HandleChangeFuncType = (
+  date: unknown,
+  dateString: string | string[],
+) => void;
 
 type UseAdminUITimePickerRetType = [
   Dayjs,
@@ -19,16 +24,14 @@ const useAdminUITimePicker = (
 ): UseAdminUITimePickerRetType => {
   const [value, setValue] = useState(defaultValue ?? dayjs());
 
+  const handleChange: HandleChangeFuncType = useCallback((_, dates) => {
+    if (Array.isArray(dates)) return;
+    setValue(dayjs(dates));
+  }, []);
+
   const TimePicker = ({ ...props }: TimePickerProps) => {
     return (
-      <DateTimePicker.Time
-        value={value}
-        onChange={(_, dates) => {
-          if (Array.isArray(dates)) return;
-          setValue(dayjs(dates));
-        }}
-        {...props}
-      />
+      <DateTimePicker.Time value={value} onChange={handleChange} {...props} />
     );
   };
 
