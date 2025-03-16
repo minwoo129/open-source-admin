@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div className="tableTestGrid"></div>
+      <div className="table-test-grid"></div>
     </>
   );
 }
