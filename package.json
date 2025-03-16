@@ -6,10 +6,22 @@
     "packages/*"
   ],
   "scripts": {
-    "main": "yarn workspace main-app"
+    "main": "yarn workspace main-app",
+    "packages:ui": "yarn workspace @admin/ui"
   },
   "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@vitejs/plugin-react": "^4.3.4",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
+    "react": "^19.0.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.8"
+  },
+  "packageManager": "yarn@4.7.0",
+  "dependencies": {
+    "dayjs": "^1.11.13"
   }
 }

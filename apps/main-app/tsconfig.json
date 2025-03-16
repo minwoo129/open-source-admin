@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "jsx": "react"
+  },
   "files": [],
   "extends": "../../tsconfig.json",
   "references": [
