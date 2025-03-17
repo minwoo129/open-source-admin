@@ -130,5 +130,5 @@ open-source-admin
 
 ### 2-3-3. 컴포넌트 종류
 
-[Button](./packages/docs/comp_button.md), Chart, Checkbox, DateTimePicker, Form, Input, LayoutCard, PasswordInput, Radio, SearchInput, Select,
+[Button](./packages/ui/docs/comp_button.md), [Chart](./packages/ui/docs/comp_chart.md), Checkbox, DateTimePicker, Form, Input, LayoutCard, PasswordInput, Radio, SearchInput, Select,
 Switch, Table
