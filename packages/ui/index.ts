@@ -20,6 +20,7 @@ export { default as Form } from './src/components/Form';
 export { default as List } from './src/components/List';
 export { default as Calendar } from './src/components/Calendar';
 export { default as Skeleton } from './src/components/Skeleton';
+export { default as Spinner } from './src/components/Spinner';
 // ======================================= hooks =======================================
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
 export { default as useAdminUIRadio } from './src/hooks/useAdminUIRadio';
