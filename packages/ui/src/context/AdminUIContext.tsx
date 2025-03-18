@@ -13,6 +13,7 @@ import {
   Title,
 } from 'chart.js';
 import { ConfigProvider } from 'antd';
+import locale from 'antd/locale/ko_KR';
 
 ChartJS.register(
   CategoryScale,
@@ -37,7 +38,7 @@ export const AdminUIContextProvider = ({
 }) => {
   return (
     <AdminUIContext.Provider value={{}}>
-      <ConfigProvider>{children}</ConfigProvider>
+      <ConfigProvider locale={locale}>{children}</ConfigProvider>
     </AdminUIContext.Provider>
   );
 };
