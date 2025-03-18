@@ -12,6 +12,7 @@ import {
   RadialLinearScale,
   Title,
 } from 'chart.js';
+import { ConfigProvider } from 'antd';
 
 ChartJS.register(
   CategoryScale,
@@ -35,7 +36,9 @@ export const AdminUIContextProvider = ({
   children: React.ReactNode;
 }) => {
   return (
-    <AdminUIContext.Provider value={{}}>{children}</AdminUIContext.Provider>
+    <AdminUIContext.Provider value={{}}>
+      <ConfigProvider>{children}</ConfigProvider>
+    </AdminUIContext.Provider>
   );
 };
 

@@ -31,3 +31,4 @@ export { default as useAdminUIDatePicker } from './src/hooks/useAdminUIDatePicke
 export { default as useAdminUIRangeDatePicker } from './src/hooks/useAdminUIRangeDatePicker';
 export { default as useAdminUITimePicker } from './src/hooks/useAdminUITimePicker';
 export { default as useAdminUIForm } from './src/hooks/useAdminUIForm';
+export { default as useAdminUINotification } from './src/hooks/useAdminUINotification';
