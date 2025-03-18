@@ -18,6 +18,7 @@ export { default as DateTimePicker } from './src/components/DateTimePicker';
 export { default as PasswordInput } from './src/components/PasswordInput';
 export { default as Form } from './src/components/Form';
 export { default as List } from './src/components/List';
+export { default as Calendar } from './src/components/Calendar';
 // ======================================= hooks =======================================
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
 export { default as useAdminUIRadio } from './src/hooks/useAdminUIRadio';
