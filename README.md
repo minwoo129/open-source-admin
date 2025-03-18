@@ -130,4 +130,4 @@ open-source-admin
 
 ### 2-3-3. 컴포넌트 및 기능 종류
 
-[Button](./packages/ui/docs/comp_button.md), Calendar, [Chart](./packages/ui/docs/comp_chart.md), [Checkbox](./packages/ui/docs/comp_checkbox.md), [DateTimePicker](./packages/ui/docs/comp_datetimepicker.md), Form, Input, LayoutCard, List, Modal, Notification, PasswordInput, PopConfirm, Progress, Radio, SearchInput, Select, Switch, Table
+[Button](./packages/ui/docs/comp_button.md), [Calendar](./packages/ui/docs/comp_calendar.md), [Chart](./packages/ui/docs/comp_chart.md), [Checkbox](./packages/ui/docs/comp_checkbox.md), [DateTimePicker](./packages/ui/docs/comp_datetimepicker.md), Form, Input, LayoutCard, List, Modal, Notification, PasswordInput, PopConfirm, Progress, Radio, SearchInput, Select, Switch, Table
