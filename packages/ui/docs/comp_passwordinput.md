@@ -1,4 +1,4 @@
-# 기능 상세문서: Notification
+# 기능 상세문서: PasswordInput
 
 ## 1. 상세정보
 
