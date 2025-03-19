@@ -1,14 +1,19 @@
 import React from 'react';
 import { Radio as AntdRadio } from 'antd';
-import { RadioProps } from './types';
+import { RadioGroupProps, RadioItemProps, RadioProps } from './types';
 
 const Radio = ({ style, ...props }: RadioProps) => {
   return (
-    <AntdRadio.Group
-      style={{ backgroundColor: 'white', ...style }}
-      {...props}
-    />
+    <AntdRadio style={{ backgroundColor: 'white', ...style }} {...props} />
   );
+};
+
+Radio.Group = ({ ...props }: RadioGroupProps) => {
+  return <AntdRadio.Group {...props} />;
+};
+
+Radio.Item = ({ ...props }: RadioItemProps) => {
+  return <AntdRadio {...props} />;
 };
 
 export default Radio;

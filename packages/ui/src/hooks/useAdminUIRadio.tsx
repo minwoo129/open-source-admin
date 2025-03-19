@@ -5,7 +5,10 @@ import { CheckboxOptionType, RadioChangeEvent } from 'antd';
 const RADIO_DEFAULT_SELECTED_VALUE = 1;
 
 interface RadioComponentProps
-  extends Omit<ComponentProps<typeof Radio>, 'value' | 'onChange' | 'options'> {
+  extends Omit<
+    ComponentProps<typeof Radio.Group>,
+    'value' | 'onChange' | 'options'
+  > {
   options: CheckboxOptionType<number>[];
 }
 
@@ -27,7 +30,7 @@ const useAdminUIRadio = (
 
   const RadioComponent = ({ options, ...props }: RadioComponentProps) => {
     return (
-      <Radio
+      <Radio.Group
         onChange={handleChange}
         value={value}
         options={options}
