@@ -10,4 +10,6 @@ List.Item = ({ ...props }: ListItemProps) => {
   return <AntdList.Item {...props} />;
 };
 
+List.ItemMeta = AntdList.Item.Meta;
+
 export default List;
