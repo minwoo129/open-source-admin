@@ -13,7 +13,8 @@
 ```tsx
 import React from 'react';
 import { ClockCircleOutlined } from '@ant-design/icons';
-import { Avatar, Badge, Space } from 'antd';
+import { Space } from 'antd';
+import { Avatar, Badge } from '@admin/ui';
 
 const App: React.FC = () => (
   <Space size="middle">
