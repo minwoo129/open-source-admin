@@ -10,7 +10,7 @@ interface SelectOptionType<T extends string | number>
 interface SelectComponentProps<T extends string | number>
   extends Omit<
     ComponentProps<typeof Select<T>>,
-    'defaultValue' | 'value' | 'options'
+    'defaultValue' | 'value' | 'options' | 'onChange'
   > {
   options: SelectOptionType<T>[];
 }
