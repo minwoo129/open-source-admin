@@ -27,6 +27,7 @@ export { default as Progress } from './src/components/Progress';
 export { default as Badge } from './src/components/Badge';
 export { default as Avatar } from './src/components/Avatar';
 export { default as Tag } from './src/components/Tag';
+export { default as TextArea } from './src/components/TextArea';
 // ======================================= hooks =======================================
 export { default as useAdminUITable } from './src/hooks/useAdminUITable';
 export { default as useAdminUIRadio } from './src/hooks/useAdminUIRadio';
