@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { LayoutCardProps } from './types';
+import type { LayoutCardProps } from './types';
 const { Content } = Layout;
 
 const LayoutCard = ({ style, ...props }: LayoutCardProps) => {

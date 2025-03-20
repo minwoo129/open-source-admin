@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table as AntdTable, Layout } from 'antd';
 import useTable from './hooks/useTable';
-import { onRowFuncType, TableObject, TableProps } from './types';
+import type { onRowFuncType, TableObject, TableProps } from './types';
 import '@ant-design/v5-patch-for-react-19';
 
 const { Content } = Layout;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { List as AntdList } from 'antd';
-import { ListItemProps, ListProps } from './types';
+import type { ListItemProps, ListProps } from './types';
 
 const List = ({ ...props }: ListProps) => {
   return <AntdList {...props} />;

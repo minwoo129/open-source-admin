@@ -1,5 +1,5 @@
 import React, { ComponentProps, FC, Key, useState } from 'react';
-import { TableObject } from '../components/Table/types';
+import type { TableObject } from '../components/Table/types';
 import Table from '../components/Table';
 
 type useAdminUITableRetType<T extends TableObject> = [

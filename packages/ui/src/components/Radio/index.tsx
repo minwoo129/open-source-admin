@@ -1,6 +1,6 @@
 import React from 'react';
 import { Radio as AntdRadio } from 'antd';
-import { RadioGroupProps, RadioItemProps, RadioProps } from './types';
+import type { RadioGroupProps, RadioItemProps, RadioProps } from './types';
 
 const Radio = ({ style, ...props }: RadioProps) => {
   return (

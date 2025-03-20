@@ -1,6 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 import Radio from '../components/Radio';
-import { CheckboxOptionType, RadioChangeEvent } from 'antd';
+import type { CheckboxOptionType, RadioChangeEvent } from 'antd';
 
 const RADIO_DEFAULT_SELECTED_VALUE = 1;
 
