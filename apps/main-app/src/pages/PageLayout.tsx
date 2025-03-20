@@ -2,11 +2,16 @@ import React from 'react';
 import '../css/PageLayout.css';
 import { Outlet } from 'react-router-dom';
 import { Button, Menu } from '@admin/ui';
-import { HomeOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import {
+  CopyOutlined,
+  HomeOutlined,
+  MenuUnfoldOutlined,
+} from '@ant-design/icons';
 import useMenu from '../hooks/common/PageLayout/useMenu';
+import { NavigationRouteData } from '../constants/Route';
 
 const PageLayout = () => {
-  const { open, toggleButtonDisabled, toggleMenu } = useMenu();
+  const { open, toggleButtonDisabled, toggleMenu, handleMenuClick } = useMenu();
   return (
     <div className="page-layout">
       <div className="menu">
@@ -21,12 +26,27 @@ const PageLayout = () => {
         <Menu
           items={[
             {
-              key: '1',
-              label: 'Home',
+              key: 'home',
+              label: NavigationRouteData['home'].label,
               icon: <HomeOutlined />,
             },
+            {
+              key: 'test',
+              label: 'TestPage',
+              icon: <CopyOutlined />,
+              children: [
+                {
+                  key: 'test1',
+                  label: NavigationRouteData['test1'].label,
+                },
+                {
+                  key: 'test2',
+                  label: NavigationRouteData['test2'].label,
+                },
+              ],
+            },
           ]}
-          onMenuClick={({ key }) => console.log(key)}
+          onMenuClick={({ key }) => handleMenuClick(key)}
           isMenuOpened={open}
         />
       </div>

@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { NavigationRouteData } from '../../../constants/Route';
 
 const RESIZE_LIMIT_WIDTH = 768;
 
 const useMenu = () => {
+  const navigate = useNavigate();
+
   const [open, setOpen] = useState(true);
   const [toggleButtonDisabled, setToggleButtonDisabled] = useState(false);
 
@@ -29,10 +33,18 @@ const useMenu = () => {
     setOpen(!open);
   };
 
+  const handleMenuClick = (key: string) => {
+    if (!(key in NavigationRouteData)) {
+      return;
+    }
+    navigate(NavigationRouteData[key].route);
+  };
+
   return {
     open,
     toggleButtonDisabled,
     toggleMenu,
+    handleMenuClick,
   };
 };
 
