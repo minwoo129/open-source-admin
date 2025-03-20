@@ -24,11 +24,6 @@ const PageLayout = () => {
               key: '1',
               label: 'Home',
               icon: <HomeOutlined />,
-              children: [
-                { key: '2', label: 'Dashboard' },
-                { key: '3', label: 'Profile' },
-                { key: '4', label: 'Settings' },
-              ],
             },
           ]}
           onMenuClick={({ key }) => console.log(key)}
