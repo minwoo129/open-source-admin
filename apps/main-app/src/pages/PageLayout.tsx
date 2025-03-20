@@ -6,12 +6,17 @@ import { HomeOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
 import useMenu from '../hooks/common/PageLayout/useMenu';
 
 const PageLayout = () => {
-  const { open, toggleMenu } = useMenu();
+  const { open, toggleButtonDisabled, toggleMenu } = useMenu();
   return (
     <div className="page-layout">
       <div className="menu">
-        <Button className="toggle-button" onClick={toggleMenu}>
-          <MenuUnfoldOutlined style={{ color: 'white' }} />
+        <Button
+          className="toggle-button"
+          onClick={toggleMenu}
+          disabled={toggleButtonDisabled}
+          ghost
+        >
+          <MenuUnfoldOutlined />
         </Button>
         <Menu
           items={[
