@@ -1,14 +1,21 @@
 //import reactLogo from './assets/react.svg';
 //import viteLogo from '/vite.svg';
-import './App.css';
+import './css/App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PageLayout from './pages/PageLayout';
+import Main from './pages/Main';
 //import { Table } from '@admin/ui';
 //import { Table } from '@admin/ui';
 
 function App() {
   return (
-    <>
-      <div className="table-test-grid"></div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<PageLayout />}>
+          <Route path="/" element={<Main />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
