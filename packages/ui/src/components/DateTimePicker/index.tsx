@@ -1,6 +1,6 @@
 import React from 'react';
 import { DatePicker as AntdDatePicker } from 'antd';
-import {
+import type {
   DateTimeDatePickerProps,
   DateTimeRangeDatePickerProps,
   DateTimeTimePickerProps,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckboxProps } from './types';
+import type { CheckboxProps } from './types';
 import { Checkbox as AntdCheckbox } from 'antd';
 
 const Checkbox = ({ ...props }: CheckboxProps) => {

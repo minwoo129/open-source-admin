@@ -1,6 +1,6 @@
 import React from 'react';
 import { Select as AntdSelect } from 'antd';
-import { SelectProps } from './types';
+import type { SelectProps } from './types';
 
 const Select = <T extends string | number>({
   style,

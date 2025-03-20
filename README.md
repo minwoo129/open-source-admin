@@ -121,14 +121,13 @@ open-source-admin
 
 ### 2-3-2. 구조 설계 방향 설명
 
-- UI 컴포넌트는 [Ant Design](https://ant.design/components/overview/)과 [Chartjs](https://www.chartjs.org/) 라이브러리를 기반으로 작성됨
+- UI 컴포넌트 및 기능은 [Ant Design](https://ant.design/components/overview/)과 [Chartjs](https://www.chartjs.org/) 라이브러리를 기반으로 작성됨
   - 컴포넌트는 사용 시 혼란을 방지하기 위해 대부분의 경우 Ant Design의 컴포넌트를 그대로 반환하도록 설계
   - Table의 경우 사용성 개선을 위해 props 구조를 일부 수정함
 - 워크 스페이스 루트 경로의 hooks 폴더
   - 실제로 사용자가 메인 워크스페이스에서 사용할 컴포넌트 별 hook을 관리하는 폴더
   - 만약 컴포넌트 안에서만 사용하는 hook의 경우 components 폴더 안에 hooks 폴더를 따로 생성해 관리할 것!!!
 
-### 2-3-3. 컴포넌트 종류
+### 2-3-3. 컴포넌트 및 기능 종류
 
-[Button](./packages/ui/docs/comp_button.md), [Chart](./packages/ui/docs/comp_chart.md), [Checkbox](./packages/ui/docs/comp_checkbox.md), [DateTimePicker](./packages/ui/docs/comp_datetimepicker.md), Form, Input, LayoutCard, PasswordInput, Radio, SearchInput, Select,
-Switch, Table
+[Avatar](./packages/ui/docs/comp_avatar.md), [Badge](./packages/ui/docs/comp_badge.md), [Button](./packages/ui/docs/comp_button.md), [Calendar](./packages/ui/docs/comp_calendar.md), [Chart](./packages/ui/docs/comp_chart.md), [Checkbox](./packages/ui/docs/comp_checkbox.md), [DateTimePicker](./packages/ui/docs/comp_datetimepicker.md), [Form](./packages/ui/docs/comp_form.md), [Input](./packages/ui/docs/comp_input.md), [LayoutCard](./packages/ui/docs/comp_layoutcard.md), [List](./packages/ui/docs/comp_list.md), [Modal](./packages/ui/docs/comp_modal.md), [Notification](./packages/ui/docs/feat_notification.md), [PasswordInput](./packages/ui/docs/comp_passwordinput.md), [PopConfirm](./packages/ui/docs/comp_popconfirm.md), [Progress](./packages/ui/docs/comp_progress.md), [Radio](./packages/ui/docs/comp_radio.md), [SearchInput](./packages/ui/docs/comp_searchinput.md), [Select](./packages/ui/docs/comp_select.md), [Skeleton](./packages/ui/docs/comp_skeleton.md), [Spinner](./packages/ui/docs/comp_spinner.md), [Switch](./packages/ui/docs/comp_switch.md), [Table](./packages/ui/docs/comp_table.md), [Tag](./packages/ui/docs/comp_tag.md), [TextArea](./packages/ui/docs/comp_textarea.md)

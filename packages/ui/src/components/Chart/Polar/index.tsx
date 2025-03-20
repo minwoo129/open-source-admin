@@ -1,6 +1,6 @@
 import React from 'react';
 import { PolarArea as ChartJSPolarArea } from 'react-chartjs-2';
-import { PolarProps } from './types';
+import type { PolarProps } from './types';
 
 const Polar = ({ style, ...props }: PolarProps) => {
   return (

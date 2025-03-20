@@ -2,7 +2,7 @@ import React, { ComponentProps, useCallback, useState } from 'react';
 import DateTimePicker from '../components/DateTimePicker';
 import dayjs from 'dayjs';
 import type { Dayjs } from 'dayjs';
-import { NoUndefinedRangeValueType } from 'rc-picker/lib/PickerInput/RangePicker';
+import type { NoUndefinedRangeValueType } from 'rc-picker/lib/PickerInput/RangePicker';
 
 interface DatePickerProps
   extends Omit<

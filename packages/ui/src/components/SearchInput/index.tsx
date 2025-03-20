@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input } from 'antd';
-import { SearchInputProps } from './types';
+import type { SearchInputProps } from './types';
 
 const SearchInput = ({ ...props }: SearchInputProps) => {
   return <Input.Search {...props} />;
