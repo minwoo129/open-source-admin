@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+const RESIZE_LIMIT_WIDTH = 768;
+
 const useMenu = () => {
   const [open, setOpen] = useState(true);
   const [toggleButtonDisabled, setToggleButtonDisabled] = useState(false);
@@ -15,8 +17,8 @@ const useMenu = () => {
   const handleResize = () => {
     const width = window.innerWidth;
 
-    setToggleButtonDisabled(width <= 768);
-    if (width <= 768) {
+    setToggleButtonDisabled(width <= RESIZE_LIMIT_WIDTH);
+    if (width <= RESIZE_LIMIT_WIDTH) {
       setOpen(false);
     } else {
       setOpen(true);
