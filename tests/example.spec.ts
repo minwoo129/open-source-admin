@@ -1,18 +1,22 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('http://localhost:5173');
+const E2E_TEST_URL = 'http://localhost:5173';
+
+test('first rendering', async ({ page }) => {
+  await page.goto(E2E_TEST_URL);
 
   // Expect a title "to contain" a substring.
   await expect(page.getByText('Main')).toBeVisible();
 });
 
-// test('get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+test('테스트 페이지1 접속', async ({ page }) => {
+  await page.goto(E2E_TEST_URL);
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
+  // 메뉴 토글 버튼 클릭
+  await page.getByRole('menuitem', { name: 'TestPage' }).click();
 
-//   // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-// });
+  // TestPage1 클릭
+  await page.getByRole('menuitem', { name: 'TestPage1' }).click();
+
+  await expect(page.getByText('Test Page 1')).toBeVisible();
+});
