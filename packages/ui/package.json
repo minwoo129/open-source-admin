@@ -14,8 +14,8 @@
     "react-chartjs-2": "^5.3.0"
   },
   "peerDependencies": {
+    "@ant-design/icons": "^5.6.1",
     "@types/react": "^19.0.10",
-    "dayjs": "^1.11.13",
-    "@ant-design/icons": "^5.6.1"
+    "dayjs": "^1.11.13"
   }
 }

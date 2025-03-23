@@ -1,0 +1,9 @@
+{
+  "name": "@admin/notion",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "dependencies": {
+    "@notionhq/client": "^2.3.0"
+  }
+}

@@ -8,7 +8,8 @@
   "scripts": {
     "main": "yarn workspace main-app",
     "packages:ui": "yarn workspace @admin/ui",
-    "packages:api": "yarn workspace @admin/api"
+    "packages:api": "yarn workspace @admin/api",
+    "packages:notion": "yarn workspace @admin/notion"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.0",
