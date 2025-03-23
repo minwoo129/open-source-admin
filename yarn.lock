@@ -13,7 +13,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@admin/notion@workspace:packages/notion":
+"@admin/notion@workspace:^, @admin/notion@workspace:packages/notion":
   version: 0.0.0-use.local
   resolution: "@admin/notion@workspace:packages/notion"
   dependencies:
@@ -2773,6 +2773,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "main-app@workspace:apps/main-app"
   dependencies:
+    "@admin/notion": "workspace:^"
     "@admin/ui": "npm:1.0.0"
     "@eslint/js": "npm:^9.21.0"
     "@types/react-dom": "npm:^19.0.4"
