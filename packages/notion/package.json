@@ -5,5 +5,8 @@
   "main": "index.ts",
   "dependencies": {
     "@notionhq/client": "^2.3.0"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.11.13"
   }
 }
