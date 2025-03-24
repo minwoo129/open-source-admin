@@ -27,7 +27,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@config": ["src/config"],
-      "@contants/*": ["src/constants/*"],
+      "@constants/*": ["src/constants/*"],
       "@css/*": ["src/css/*"],
       "@hooks/*": ["src/hooks/*"],
       "@pages/*": ["src/pages/*"],
