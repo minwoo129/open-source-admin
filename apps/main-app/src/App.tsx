@@ -2,10 +2,10 @@
 //import viteLogo from '/vite.svg';
 import './css/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import PageLayout from './pages/PageLayout';
-import Main from './pages/Main';
-import TestPage1 from './pages/TestPage1';
-import TestPage2 from './pages/TestPage2';
+import PageLayout from '@pages/PageLayout';
+import Main from '@pages/Main';
+import TestPage1 from '@pages/TestPage1';
+import TestPage2 from '@pages/TestPage2';
 //import { Table } from '@admin/ui';
 //import { Table } from '@admin/ui';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/PageLayout.css';
+import '@css/PageLayout.css';
 import { Outlet } from 'react-router-dom';
 import { Button, Menu } from '@admin/ui';
 import {
@@ -7,8 +7,8 @@ import {
   HomeOutlined,
   MenuUnfoldOutlined,
 } from '@ant-design/icons';
-import useMenu from '../hooks/common/PageLayout/useMenu';
-import { NavigationRouteData } from '../constants/Route';
+import useMenu from '@hooks/common/PageLayout/useMenu';
+import { NavigationRouteData } from '@constants/Route';
 
 const PageLayout = () => {
   const { open, toggleButtonDisabled, toggleMenu, handleMenuClick } = useMenu();
