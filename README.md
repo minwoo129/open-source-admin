@@ -316,3 +316,12 @@ export default useMenu;
 ### 2-3-3. 컴포넌트 및 기능 종류
 
 [Avatar](./packages/ui/docs/comp_avatar.md), [Badge](./packages/ui/docs/comp_badge.md), [Button](./packages/ui/docs/comp_button.md), [Calendar](./packages/ui/docs/comp_calendar.md), [Chart](./packages/ui/docs/comp_chart.md), [Checkbox](./packages/ui/docs/comp_checkbox.md), [DateTimePicker](./packages/ui/docs/comp_datetimepicker.md), [Form](./packages/ui/docs/comp_form.md), [Input](./packages/ui/docs/comp_input.md), [LayoutCard](./packages/ui/docs/comp_layoutcard.md), [List](./packages/ui/docs/comp_list.md), [Menu](./packages/ui/docs/comp_menu.md), [Modal](./packages/ui/docs/comp_modal.md), [Notification](./packages/ui/docs/feat_notification.md), [PasswordInput](./packages/ui/docs/comp_passwordinput.md), [PopConfirm](./packages/ui/docs/comp_popconfirm.md), [Progress](./packages/ui/docs/comp_progress.md), [Radio](./packages/ui/docs/comp_radio.md), [SearchInput](./packages/ui/docs/comp_searchinput.md), [Select](./packages/ui/docs/comp_select.md), [Skeleton](./packages/ui/docs/comp_skeleton.md), [Spinner](./packages/ui/docs/comp_spinner.md), [Switch](./packages/ui/docs/comp_switch.md), [Table](./packages/ui/docs/comp_table.md), [Tag](./packages/ui/docs/comp_tag.md), [TextArea](./packages/ui/docs/comp_textarea.md)
+
+# 3. 프로젝트 다운로드 방법
+
+1. `master` 브랜치에서 zip 파일 다운로드 또는 Clone으로 내려 받으시면 됩니다. => [레포지토리 링크](https://github.com/minwoo129/open-source-admin/tree/master)
+   - 이 레포지토리의 디폴트 브랜치는 `develop` 입니다 => 사용주의!!!!
+
+# 4. 라이선스 정보
+
+MIT
