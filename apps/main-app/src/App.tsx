@@ -10,6 +10,9 @@ import TestPage2 from '@pages/TestPage2';
 //import { Table } from '@admin/ui';
 
 function App() {
+  const testFunc = () => {
+    console.log('testFunc');
+  };
   return (
     <BrowserRouter>
       <Routes>
