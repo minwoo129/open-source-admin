@@ -29,6 +29,7 @@
     "storybook-static",
     "public",
     "**/eslint.config.js",
+    "**/eslint.config.mjs",
     "**/jest.config.js"
   ]
 }
