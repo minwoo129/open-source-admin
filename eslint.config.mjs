@@ -6,10 +6,9 @@ import pluginReact from 'eslint-plugin-react';
 import pluginPrettier from 'eslint-plugin-prettier';
 
 export default defineConfig([
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    languageOptions: { globals: globals.browser },
+    languageOptions: { ecmaVersion: 2020, globals: globals.browser },
   },
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
@@ -34,6 +33,7 @@ export default defineConfig([
       'no-unused-vars': 'error',
       '@typescript-eslint/no-unused-vars': 'error',
       'react/react-in-jsx-scope': 'off',
+      'no-var': 'error',
     },
   },
   //tseslint.configs.recommended,
