@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import React from 'react';
 import { Button as AntdButton } from 'antd';
 import type { ButtonProps } from './types';
 
