@@ -15,7 +15,7 @@ const meta: Meta<typeof Button> = {
       description: '버튼 클릭 시 발생 이벤트',
     },
     color: {
-      control: 'color',
+      control: 'select',
       options: [
         'default',
         'primary',
@@ -34,8 +34,12 @@ const meta: Meta<typeof Button> = {
         'lime',
         'gold',
       ],
-      type: 'string',
       description: '버튼 색상',
+    },
+    size: {
+      control: 'select',
+      options: ['small', 'middle', 'large'],
+      description: '버튼 크기',
     },
     variant: {
       control: 'select',
