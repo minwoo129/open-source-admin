@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line as ChartJSLine } from 'react-chartjs-2';
-import { LineProps } from './types';
+import type { LineProps } from './types';
 
 const Line = ({ style, ...props }: LineProps) => {
   return (

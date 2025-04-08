@@ -1,6 +1,6 @@
 import React, { ComponentProps, useState } from 'react';
 import Select from '../components/Select';
-import { DefaultOptionType } from 'antd/es/select';
+import type { DefaultOptionType } from 'antd/es/select';
 
 interface SelectOptionType<T extends string | number>
   extends Omit<DefaultOptionType, 'value'> {
@@ -10,7 +10,7 @@ interface SelectOptionType<T extends string | number>
 interface SelectComponentProps<T extends string | number>
   extends Omit<
     ComponentProps<typeof Select<T>>,
-    'defaultValue' | 'value' | 'options'
+    'defaultValue' | 'value' | 'options' | 'onChange'
   > {
   options: SelectOptionType<T>[];
 }

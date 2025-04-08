@@ -1,7 +1,7 @@
 import React, { ComponentProps, ReactNode } from 'react';
 import { Form as AntdForm, FormInstance } from 'antd';
 import Form from '../components/Form';
-import { FormBasicType } from '../components/Form/types';
+import type { FormBasicType } from '../components/Form/types';
 
 interface FormComponentProps<T extends FormBasicType>
   extends Omit<ComponentProps<typeof Form<T>>, 'form'> {}

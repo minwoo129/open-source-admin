@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form as AntdForm } from 'antd';
-import { FormBasicType, FormItemProps, FormProps } from './types';
+import type { FormBasicType, FormItemProps, FormProps } from './types';
 
 const Form = <T extends FormBasicType>({ ...props }: FormProps<T>) => {
   return <AntdForm<T> {...props} />;
