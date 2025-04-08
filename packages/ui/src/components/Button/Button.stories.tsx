@@ -1,9 +1,10 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
-import { Button } from '.';
+import Button from '.';
 import { Flex } from 'antd';
 
+/** 버튼 컴포넌트 */
 const meta: Meta<typeof Button> = {
   title: 'AdminUI/Button',
   component: Button,
@@ -53,6 +54,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+/** 디폴트 상태일 때의 형태 */
 export const Default: Story = {
   args: {
     onClick: fn(),
@@ -62,6 +64,9 @@ export const Default: Story = {
   },
 };
 
+/**
+ * 각 컬러별 버튼 형태
+ */
 export const ColorAndVarient: Story = {
   args: {
     onClick: fn(),
@@ -70,8 +75,6 @@ export const ColorAndVarient: Story = {
     return (
       <Flex vertical gap="small">
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Primary:</Flex>
-
           <Button color="primary" variant="solid" onClick={args.onClick}>
             {'Primary'}
           </Button>
@@ -92,9 +95,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Danger:</Flex>
           <Button color="danger" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Danger'}
           </Button>
           <Button color="danger" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
@@ -113,9 +115,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Blue:</Flex>
           <Button color="blue" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Blue'}
           </Button>
           <Button color="blue" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
@@ -134,9 +135,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Purple: </Flex>
           <Button color="purple" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Purple'}
           </Button>
           <Button color="purple" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
@@ -155,9 +155,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Cyan:</Flex>
           <Button color="cyan" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Cyan'}
           </Button>
           <Button color="cyan" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
@@ -176,9 +175,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Green:</Flex>
           <Button color="green" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Green'}
           </Button>
           <Button color="green" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
@@ -197,9 +195,8 @@ export const ColorAndVarient: Story = {
           </Button>
         </Flex>
         <Flex gap="small" justify="flex-start" align="center">
-          <Flex style={{ width: '80px' }}>Magenta:</Flex>
           <Button color="magenta" variant="solid" onClick={args.onClick}>
-            {'Primary'}
+            {'Magenta'}
           </Button>
           <Button color="magenta" variant="outlined" onClick={args.onClick}>
             {'Outlined'}
