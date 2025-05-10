@@ -24,6 +24,7 @@
     "**/*.spec.ts",
     "**/*.spec.tsx",
     "**/*.stories.tsx",
+    "**/*.mdx",
     "**/.storybook",
     "coverage",
     "storybook-static",
